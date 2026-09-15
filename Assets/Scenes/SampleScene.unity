@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 1233349574}
   - component: {fileID: 1233349578}
   - component: {fileID: 1233349577}
+  - component: {fileID: 1233349579}
   m_Layer: 0
   m_Name: Eatty McDash
   m_TagString: Untagged
@@ -567,6 +568,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &1233349579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233349573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e94f8241d6a31424db975b1844f6abc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collision
 --- !u!1 &1244335544
 GameObject:
   m_ObjectHideFlags: 0
