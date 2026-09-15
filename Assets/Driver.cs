@@ -32,8 +32,7 @@ public class Driver : MonoBehaviour
             steer = -1f;
         }
 
-        transform.Rotate(0, 0, steer * steerSpeed);
-        transform.Translate(0, move * moveSpeed, 0);
-
+        transform.Rotate(0, 0, steer *  steerSpeed * Time.deltaTime);
+        transform.Translate(0, move * moveSpeed * Time.deltaTime, 0);
     }
 }
