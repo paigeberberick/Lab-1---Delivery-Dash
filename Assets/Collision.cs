@@ -4,6 +4,7 @@ public class Collision : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         Debug.Log("Hit object!");
         if (collision.gameObject.CompareTag("EvilObstacle"))
         {
