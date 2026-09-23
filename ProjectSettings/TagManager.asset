@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EvilObstacle
   - Obstacle
+  - Package
   layers:
   - Default
   - TransparentFX
