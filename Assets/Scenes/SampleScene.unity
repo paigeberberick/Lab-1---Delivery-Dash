@@ -1066,6 +1066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48653131}
   - component: {fileID: 48653130}
+  - component: {fileID: 48653132}
   m_Layer: 0
   m_Name: pickupitem_0
   m_TagString: Package
@@ -1148,6 +1149,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &48653132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48653129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.94208527, y: 0.64899945, z: 0.2}
+  m_Center: {x: -0.06570816, y: 0.0069168806, z: 0}
 --- !u!1 &63492829
 GameObject:
   m_ObjectHideFlags: 0

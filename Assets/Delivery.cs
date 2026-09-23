@@ -1,22 +1,22 @@
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class Delivery : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        Debug.Log("Hit object!");
-        if (collision.gameObject.CompareTag("EvilObstacle"))
-        {
-            Destroy(collision.gameObject);
-            Debug.Log("Grabbed Package!");
-        }
-    }
+    bool hasPackage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Delivered Package!");
+        if (collision.CompareTag("Package"))
+        {
+            Debug.Log("Picked up Package!");
+            hasPackage = true;
+        }
 
+        if (collision.CompareTag("Customer") && hasPackage)
+        {
+            Debug.Log("Delivered Package!");
+           hasPackage= false;
+        }
     }
 }
 
